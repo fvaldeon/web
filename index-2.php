@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"> 
 <head> 
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Gestion Gimnasio</title> 
 <!-- codigo css para la tabla -->
 <style>
@@ -42,12 +42,16 @@ th {
 </head> 
 <body> 
 
-<h1>Gestion Gimnasio</h1>
+<h1>Gestion Usuarios</h1>
+<p>Proyecto creado para aprender a usar <b>PHP, HTML y CSS</b>. Conectamos con una base de datos y permitimos realizar las
+    operaciones <i>CRUD</i>. Usamos un fichero php con los datos de conexion de la base de datos. Poco a poco iremos
+    ampliando el diseño utilizando directivas <strong>CSS y HTML</strong>. </p>
 
 <!-- Conexion desde php -->
-<?php 
+<?php
+    include("db_conf.php");
   // Conectar al servidor local con mi usuario fer2
-  if(!($iden = mysqli_connect("localhost", "root", "", "enformacion"))) 
+  if(!($iden = mysqli_connect(DB_HOST, DB_USUARIO, DB_PASSWORD, DB_NOMBRE)))
     die("Error: No se pudo conectar");
 	
 
@@ -101,9 +105,9 @@ echo '<h3>Usuarios registrados</h3>';
 <form action="modificado.php" method="post">
   <fieldset>
     <legend>Eliminar usuario:</legend>
-<?php    
-
-if(!($iden = mysqli_connect("localhost", "root", "", "enformacion"))) 
+<?php
+include("db_conf.php");
+if(!($iden = mysqli_connect("localhost", "fer", "1234", "enformacion"))) 
     die("Error: No se pudo conectar");
 	
   // Sentencia SQL: muestra todo el contenido de la tabla "usuarios" 
@@ -128,9 +132,9 @@ if(!($iden = mysqli_connect("localhost", "root", "", "enformacion")))
   <fieldset>
     <legend>Modificar datos usuario:</legend>
 	Usuario a modificar: <br>
-<?php    
-	
-	if(!($iden = mysqli_connect("localhost", "root", "", "enformacion"))) 
+<?php
+    include("db_conf.php");
+	if(!($iden = mysqli_connect(DB_HOST, DB_USUARIO, DB_PASSWORD, DB_NOMBRE)))
 		die("Error: No se pudo conectar");
 	
 	// Sentencia SQL: muestra todo el contenido de la tabla "usuarios" 
