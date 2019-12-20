@@ -1,15 +1,15 @@
 <html>
 <head>
     <title>Datos Modificados</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="plugins/modificado.css"
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="plugins/modificado.css"/>
 
 
 </head>
 <body>
 
 <?php
-    include("db_conf.php");
+    include("bbdd/db_conf.php");
     // Conectar al servidor local con mi usuario root
     $conexion = new mysqli(DB_HOST, DB_USUARIO, DB_PASSWORD, DB_NOMBRE);
     if($conexion->connect_error) {
@@ -83,6 +83,9 @@
         } else{
             echo "Error: usuario no actualizado";
         }
+
+        $resultado->free_result();
+        $conexion->close();
 
     }
 

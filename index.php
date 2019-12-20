@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <title>Gestión de usuarios</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="plugins/http_maxcdn.bootstrapcdn.com_bootstrap_3.4.1_css_bootstrap.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="plugins/http_maxcdn.bootstrapcdn.com_bootstrap_3.4.1_css_bootstrap.css"/>
 
     <script src="plugins/http_ajax.googleapis.com_ajax_libs_jquery_3.4.1_jquery.js"></script>
     <script src="plugins/http_maxcdn.bootstrapcdn.com_bootstrap_3.4.1_js_bootstrap.js"></script>
@@ -53,7 +53,7 @@
 
 
     <?php
-        include("db_conf.php");
+        include("bbdd/db_conf.php");
         // Conectar al servidor local con mi usuario fer2
         if(!($iden = mysqli_connect(DB_HOST, DB_USUARIO, DB_PASSWORD, DB_NOMBRE)))
             die("Error: No se pudo conectar");
@@ -76,11 +76,7 @@
         }
         echo '</table>';
 
-        // Libera la memoria de los datos consultados
-        mysqli_free_result($resultado);
 
-        // Cierra la conexion con la base de datos
-        mysqli_close($iden);
 
     ?>
 
@@ -115,9 +111,6 @@
                     <legend>Eliminar usuario:</legend>
                     <?php
 
-                    if(!($iden = mysqli_connect("localhost", "fer", "1234", "enformacion")))
-                        die("Error: No se pudo conectar");
-
                     // Sentencia SQL: muestra todo el contenido de la tabla "usuarios"
                     $sentencia = "SELECT nif, nombre, apellidos From usuarios";
                     $resultado = mysqli_query($iden, $sentencia );
@@ -141,9 +134,6 @@
                     Usuario a modificar: <br>
                     <?php
 
-                    if(!($iden = mysqli_connect(DB_HOST, DB_USUARIO, DB_PASSWORD, DB_NOMBRE)))
-                        die("Error: No se pudo conectar");
-
                     // Sentencia SQL: muestra todo el contenido de la tabla "usuarios"
                     $sentencia = "SELECT nif, nombre, apellidos From usuarios";
                     $resultado = mysqli_query($iden, $sentencia );
@@ -156,6 +146,12 @@
                     }
 
                     echo '</select>';
+
+                    // Libera la memoria de los datos consultados
+                    mysqli_free_result($resultado);
+
+                    // Cierra la conexion con la base de datos
+                    mysqli_close($iden);
                     ?>
                     <input type="submit" name="boton" value="Modificar">
                     <br>
@@ -186,7 +182,7 @@
 </div>
 
 <div style="text-align: center">
-    <a style="font-family:Arial;color:darkred;font-size:140%;" href="https://github.com/fvaldeon/web"> (c) Fernando Valdeón</a>
+    <a style="font-family:Arial;color:darkred;font-size:140%;" href="https://github.com/fvaldeon/web" target="_blank"> (c) Fernando Valdeón</a>
 </div>
 
 <br><br>
