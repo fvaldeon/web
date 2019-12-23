@@ -11,7 +11,7 @@
 
 <body>
     <img class="imagen-centrada" src="images/users.jpg">
-    <h2 style="text-align: center">Gimnasios</h2>
+    <h2>Gimnasios</h2>
     <table class="centrada">
         <tr>
             <th>ID</th>
@@ -43,7 +43,23 @@
             }
         ?>
     </table>
-
+    <div >
+        <h2> Insertar Gimnasio</h2>
+        <?php
+            $sql = "INSERT INTO gimnasios(nombre, mixto, fecha_creacion) VALUES (?, ?, ?)";
+            $stmt = $conexion->prepare($sql);
+        ?>
+        <form action="<?php $stmt->bind_param('sbd',$_POST["nombre"], $_POST["mixto"], $_POST["fecha"]);
+        $stmt->execute()?>" method="post">
+            <fieldset>
+                <legend>Insertar Gimnasio</legend>
+                Nombre <input type="text" name="nombre"/><br>
+                Mixto <input type="checkbox" name="mixto"/><br>
+                Fecha Creación <input type="date" name="fecha"><br>
+                <input type="submit" value="Insertar">
+            </fieldset>
+        </form>
+    </div>
     <hr>
 
     <hr>

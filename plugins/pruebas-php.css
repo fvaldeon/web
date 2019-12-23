@@ -26,8 +26,19 @@ body {
     background-color: #e4b9a0;
 }
 
+/* muestro el video en el medio */
 iframe{
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+h2{
+    text-align: center;
+}
+
+/* muestro el form en el medio*/
+form{
+    display:table;
+    margin: auto;
 }
