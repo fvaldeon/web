@@ -2,7 +2,7 @@
 <head>
     <title>Datos Modificados</title>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="plugins/modificado.css"/>
+    <link rel="stylesheet" href="css/modificado.css"/>
 
 
 </head>
