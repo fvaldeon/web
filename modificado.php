@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html land="es-ES">
 <head>
     <title>Datos Modificados</title>
     <meta charset="UTF-8"/>

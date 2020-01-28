@@ -14,8 +14,8 @@
             width: 70%;
         }
         table.center{
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
+
         }
         th, td {
             text-align: left;

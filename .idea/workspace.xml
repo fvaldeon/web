@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21622639-868d-4a60-a847-f9d953aa509e" name="Default Changelist" comment="" />
+    <list default="true" id="21622639-868d-4a60-a847-f9d953aa509e" name="Default Changelist" comment="Merge branch 'master' of https://github.com/fvaldeon/web&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/pruebas-css.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pruebas-javascript.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modificado.php" beforeDir="false" afterPath="$PROJECT_DIR$/modificado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas-php.php" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas-php.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +64,13 @@
     </expand>
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -71,18 +86,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bbdd" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\gimnasio" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
       <recent name="C:\xampp\htdocs\gimnasio\bbdd" />
       <recent name="C:\xampp\htdocs\gimnasio\plugins" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bbdd" />
+      <recent name="C:\xampp\htdocs\gimnasio" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.index.php">
@@ -104,12 +123,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - enformacion@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -129,11 +143,17 @@
       <workItem from="1576685931577" duration="8078000" />
       <workItem from="1576743369391" duration="4264000" />
       <workItem from="1576839541483" duration="11755000" />
+      <workItem from="1577708592136" duration="17181000" />
+      <workItem from="1579258802036" duration="7950000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://github.com/fvaldeon/web&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/fvaldeon/web&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="532" y="218" width="824" height="692" key="#CLI_Interpreters" timestamp="1576690466286">
@@ -148,10 +168,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="531" y="119" width="837" height="883" key="#PHP/0.27.1920.1053@0.27.1920.1053" timestamp="1576690468853" />
-    <state x="552" y="179" key="#SQL_Dialects" timestamp="1576849960632">
+    <state x="552" y="179" key="#SQL_Dialects" timestamp="1579258987810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#SQL_Dialects/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1576849960632" />
+    <state x="552" y="179" key="#SQL_Dialects/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1579258987810" />
     <state x="552" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576850182564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -160,10 +180,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="579" y="203" width="751" height="708" key="#index.php/0.27.1920.1053@0.27.1920.1053" timestamp="1576690472068" />
+    <state x="577" y="75" key="CommitChangelistDialog2" timestamp="1579259150687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="75" key="CommitChangelistDialog2/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1579259150687" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1576839581691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1576839581691" />
+    <state x="184" y="92" key="MergeDialog" timestamp="1579259231072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="92" key="MergeDialog/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1579259231072" />
+    <state x="672" y="237" key="MultipleFileMergeDialog" timestamp="1579259242842">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="237" key="MultipleFileMergeDialog/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1579259242842" />
     <state x="730" y="471" width="449" height="171" key="NewPhpFileDialog" timestamp="1576686176043">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -176,11 +208,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1576840029136" />
-    <state x="572" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1576839542748">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579259170737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1576743370429" />
-    <state x="572" y="349" key="com.intellij.ide.util.TipDialog/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1576839542748" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1579259170737" />
+    <state x="572" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1579258802111">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="572" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1577708594647" />
+    <state x="572" y="349" key="com.intellij.ide.util.TipDialog/1920.0.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1579258802111" />
+    <state x="545" y="63" width="830" height="981" key="find.popup" timestamp="1577728063864">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="545" y="63" width="830" height="981" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1577728063864" />
     <state x="608" y="229" width="702" height="671" key="search.everywhere.popup" timestamp="1576841092242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

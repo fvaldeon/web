@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
 
 <head>
     <title>Pruebas php</title>
@@ -27,7 +27,7 @@
             unset($_POST["nombre"]);
         }
     ?>
-    <img class="imagen-centrada" src="images/users.jpg">
+    <img class="imagen-centrada" src="images/users.jpg" alt="logo">
 
     <div>
         <div style="float: left;width: 50%">
@@ -116,7 +116,7 @@
     <h2>Modificar gimnasio</h2>
     <hr>
     <iframe src="https://player.vimeo.com/video/365250686" width="640" height="385"
-            frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            allow="autoplay; fullscreen" allowfullscreen></iframe>
 
     <div class="list-group" style="text-align: center">
         <a href="pruebas-html5.html" class="list-group-item" target="_blank">HTML5</a>
