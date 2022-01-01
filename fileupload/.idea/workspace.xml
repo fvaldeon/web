@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50c72b10-f980-4108-80cd-7e516fbe9fe0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="22cOEepBlGngIPUcld1Y1P4q6mL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/restricted/conf" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload\restricted\conf" />
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload\restricted" />
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload" />
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload\php" />
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload\nuevo-diseno" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload\restricted\conf" />
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload\css_styles" />
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload\nuevo-diseño" />
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload\uploaded_files" />
+      <recent name="C:\Users\Fer\PhpstormProjects\fileupload" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.index.php">
+    <configuration name="generate-hashed-password.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/fileupload/generate-hashed-password.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/fileupload/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="upload.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/restricted/upload.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="JavaScript Debug.generate-hashed-password.php" />
+      <item itemvalue="PHP Script.upload.php" />
+      <item itemvalue="PHP Script.index.php" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="JavaScript Debug.generate-hashed-password.php" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="PHP Script.upload.php" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50c72b10-f980-4108-80cd-7e516fbe9fe0" name="Default Changelist" comment="" />
+      <created>1640133298907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640133298907</updated>
+      <workItem from="1640133300008" duration="2217000" />
+      <workItem from="1640135678214" duration="256000" />
+      <workItem from="1640135999152" duration="110416000" />
+      <workItem from="1640560123729" duration="143477000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="624" y="14" key="#PHP" timestamp="1640133777727">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="624" y="14" key="#PHP/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640133777727" />
+    <state x="414" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1640135450796">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640135450796" />
+    <state x="644" y="146" key="#index2.php" timestamp="1640133779186">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="644" y="146" key="#index2.php/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640133779186" />
+    <state x="689" y="217" key="FileChooserDialogImpl" timestamp="1640135396631">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="217" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640135396631" />
+    <state width="1865" height="268" key="GridCell.Tab.0.bottom" timestamp="1641063917325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641063917325" />
+    <state width="1865" height="268" key="GridCell.Tab.0.center" timestamp="1641063917325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="268" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641063917325" />
+    <state width="1865" height="268" key="GridCell.Tab.0.left" timestamp="1641063917325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="268" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641063917325" />
+    <state width="1865" height="268" key="GridCell.Tab.0.right" timestamp="1641063917325">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641063917325" />
+    <state width="1865" height="333" key="GridCell.Tab.1.bottom" timestamp="1640135534520">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="333" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640135534520" />
+    <state width="1865" height="333" key="GridCell.Tab.1.center" timestamp="1640135534520">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="333" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640135534520" />
+    <state width="1865" height="333" key="GridCell.Tab.1.left" timestamp="1640135534519">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="333" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640135534519" />
+    <state width="1865" height="333" key="GridCell.Tab.1.right" timestamp="1640135534520">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="333" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640135534520" />
+    <state x="1032" y="584" key="NewPhpFileDialog" timestamp="1640976339438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="584" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640976339438" />
+    <state x="352" y="77" key="SettingsEditor" timestamp="1640476923284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="352" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640476923284" />
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1640136001026">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="591" y="302" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640136001026" />
+    <state x="594" y="14" width="731" height="1011" key="find.popup" timestamp="1641064732367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="594" y="14" width="731" height="1011" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641064732367" />
+    <state width="750" height="530" key="javadoc.popup" timestamp="1640568533055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="750" height="530" key="javadoc.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640568533055" />
+    <state x="532" y="237" width="840" height="1034" key="run.anything.popup" timestamp="1640708054305">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" width="840" height="1034" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1640708054305" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1641055176605">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1641055176605" />
+  </component>
+</project>

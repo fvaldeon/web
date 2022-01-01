@@ -1,0 +1,136 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #0385f4, #35ae57);
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  margin: 50px 0;
+}
+
+section {
+  flex-grow: 1;
+}
+
+.file-drop-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  max-width: 100%;
+  padding: 25px;
+  margin-bottom: 10px;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.file-drop-area.is-active {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.accept-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  max-width: 100%;
+  padding: 25px;
+  margin-bottom: 10px;
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.fake-btn {
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.codigo-alumno {
+  flex-shrink: 0;
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.fake-field {
+  flex-shrink: 0;
+  border-radius: 3px;
+  padding: 8px 5px;
+  margin-right: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+input[type=text] {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+.field {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.file-msg {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.file-input:focus {
+  outline: none;
+}
+
+footer {
+  margin-top: 300px;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+
+
+.link-abrilcode{
+  color: midnightblue;
+}
