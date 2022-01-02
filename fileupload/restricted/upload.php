@@ -2,6 +2,7 @@
 session_start();
 
 include("./conf/db_conf.php");
+include("./conf/funciones.php");
 
 $con = mysqli_connect(DATABASE_HOST, DATABASE_USER, DATABASE_PASS, DATABASE_NAME);
 $message = '';
@@ -71,10 +72,9 @@ if ( mysqli_connect_errno() ) {
                                                 $stmt->execute();
                                                 $stmt->close();
 
-                                                $message = 'Fichero enviado correctamente'.$con->error;
+                                                $message = 'Fichero enviado correctamente';
                                             } else {
-                                                $message = "Error: No se ha guardado el envío en la base de datos. " .
-                                                "<br/>" . $stmt->error;
+                                                $message = "Error: No se ha guardado el envío en la base de datos. <br/>" . $stmt->error;
                                             }
                                         } else {
                                             $message = "Error: no se ha podido mover el fichero.";
@@ -86,8 +86,9 @@ if ( mysqli_connect_errno() ) {
                                     $message = 'Error: El tamaño máximo es ' . $fileMaxSize . 'Mb.';
                                 }
                             } else {
-                                $message = 'Hay errores en el envío del fichero.<br>';
-                                $message .= 'Error:' . $_FILES['uploadedFile']['error'];
+                                $message = 'Hay errores en el envío del fichero.<br>' .
+                                         "Error interno (" . $_FILES['uploadedFile']['error'] . "): " .
+                                            mensajeErrorFiles($_FILES['uploadedFile']['error']);
                             }
                         }
                     } else {
@@ -110,10 +111,4 @@ $con->close();
 $_SESSION['message'] = $message;
 header("Location: ../index.php");
 
-//Función para sanear el nombre. Elimina tildes, espacios o barras multiples y caracteres no permitidos
-function sanear_nombre_fichero($file){
-    $sinAcentos = iconv('UTF-8','ASCII//TRANSLIT', $file);
-    $sanearBarras = preg_replace('/_+|-+/', ' ', $sinAcentos);
-    $sinEspacios = preg_replace('/\s+/', '-', $sanearBarras);
-    return preg_replace( '/[^a-zA-Z0-9._\-()]+/', '',  $sinEspacios);
-}
+

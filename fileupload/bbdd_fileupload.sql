@@ -114,7 +114,7 @@ END; $$
 CREATE OR REPLACE PROCEDURE set_extensiones_permitidas(p_extensiones VARCHAR(200))
 BEGIN
 	UPDATE configs
-    SET extensiones_permitidas = p_extensiones
+    SET extensiones_permitidas = LOWER(p_extensiones)
     WHERE id = (SELECT id FROM configs ORDER BY id DESC LIMIT 1);
 END; $$
 
