@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS fileupload;
-USE fileupload;
+CREATE DATABASE IF NOT EXISTS entregas;
+USE entregas;
 
 CREATE TABLE entregas(
 id INT PRIMARY KEY AUTO_INCREMENT,
@@ -19,6 +19,7 @@ FOREIGN KEY (id_entrega) REFERENCES entregas(id) ON DELETE RESTRICT
 CREATE TABLE uploads_eliminados(
 id INT PRIMARY KEY AUTO_INCREMENT,
 codigo_alumno VARCHAR(10),
+alumno VARCHAR(90),
 fecha_envio TIMESTAMP,
 nombre_fichero VARCHAR(100),
 ruta_directorio VARCHAR(200),
@@ -274,7 +275,7 @@ ON uploads FOR EACH ROW
 BEGIN
 	DECLARE v_nombre VARCHAR(100);
     DECLARE v_directorio VARCHAR(200);
-    DECLARE v_alumno VARCHAR(50) DEFAULT NULL;
+    DECLARE v_alumno VARCHAR(90) DEFAULT NULL;
     DECLARE v_alumno_registrado INT;
     
     SET v_alumno_registrado = (SELECT COUNT(*) FROM alumnos WHERE codigo = OLD.codigo_alumno);

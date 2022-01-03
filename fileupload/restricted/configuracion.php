@@ -195,7 +195,7 @@ if(isset($_POST['entrega_seleccionada'])){
 
             echo "<table ><tr><td>Nombre entrega:</td><td>" . $nombreEntregaListada ."</td></tr>";
             echo "<tr><td>Ruta directorio:</td><td>" . $rutaEntregaListada ."</td></tr>";
-            echo "<tr><td>Max size:</td><td>" . $size ."</td></tr></table><br/>";
+            echo "<tr><td>Max size:</td><td>" . $size ."</td></tr></table>";
 
             //echo "<table><tr><th>Nombre entrega</th><th>Ruta directorio</th><th>Max size</th></tr>";
             //echo "<tr><td>" . $nombre . "</td><td>" . $ruta ."</td><td>" . $size . "</td></tr></table><br/>";
@@ -256,15 +256,22 @@ if(isset($_POST['entrega_seleccionada'])){
 ?>
             </table>
         <br/>
-        <input type="submit" class="delete" name="eliminarEnvios" value="Eliminar Selección" onclick="return confirm('¿Desea eliminar?')">
+        <input type="submit" class="delete" name="eliminarEnvios" value="Eliminar Selección" onclick="return confirm('¿Desea eliminar los elementos seleccionados?')">
+
 <?php
     }
-        $stmt->close();
-}
+        //En caso de que no haya ningun envio listado, si tampoco hay entrega deshabilito el botón
+    if(!empty($nombreEntregaListada)){
 ?>
-        <input type="hidden" name="nombre_entrega" value="<?=$nombreEntregaListada?>">
-        <input type="hidden" name="ruta_entrega" value="<?=$rutaEntregaListada?>">
-        <input type="submit" class="delete" name="eliminarEntrega" value="Eliminar Entrega" onclick="return confirm('¿Desea eliminar?')">
+            <input type="hidden" name="nombre_entrega" value="<?=$nombreEntregaListada?>">
+            <input type="hidden" name="ruta_entrega" value="<?=$rutaEntregaListada?>">
+            <input type="submit" style="float: right;" class="delete" name="eliminarEntrega" value="Eliminar Entrega" onclick="return confirm('ATENCIÓN: ¿eliminar entrega completa?')">
+            <br/>
+    <?php
+    }
+    $stmt->close();
+}
+    ?>
         </form>
     </div>
 </div>

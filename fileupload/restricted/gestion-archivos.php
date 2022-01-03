@@ -98,7 +98,7 @@ if (mysqli_connect_errno()) {
                     "<br/>" . $con->error;
             }
         } else {
-            $message3 = "No se ha seleccionado elementos";
+            $message3 = "No se han seleccionado elementos";
         }
     }
     $con->close();
