@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+date_default_timezone_set("Europe/Madrid");
 include("./conf/db_conf.php");
 include("./conf/funciones.php");
 
