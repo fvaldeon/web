@@ -3,6 +3,7 @@ session_start();
 include("./conf/upload_conf.php");
 include("./conf/db_conf.php");
 include ("./conf/funciones.php");
+date_default_timezone_set("Europe/Madrid");
 
 if (!isset($_SESSION['loggedin'])) {
     header('Location: ../index.php');

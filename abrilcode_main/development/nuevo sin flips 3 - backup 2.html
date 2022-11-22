@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;font-family:Arial;
+            
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+		/*
+		Barra de título
+		*/
+		
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 24px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:not(:first-child) a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) a:not(:nth-child(2)), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+	/*
+Areas del cuerpo de la web
+*/	
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 10px;
+			padding-left:16px;
+        }
+
+        /* Clear floats after the columns */
+        .row1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+		
+ /* Footer */
+        .footer {
+            padding: 2px;
+            text-align: center;
+            background: white;
+            margin: 10px 0px;
+        }
+	
+
+/*
+	contenido responsive
+*/
+	
+
+		* {
+  box-sizing: border-box;
+}
+
+
+
+/* Center website */
+.main {
+ max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px 16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 15px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+border-radius: 25px;
+  background-color: #cce6ff;
+  padding: 10px;
+  text-align:center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 580px) {
+  .column {
+    width: 100%;
+  }
+}
+		
+		
+		/*
+			Hover sobre las imágenes
+		*/
+		
+	
+		
+		    .vertical-menu  a {
+            
+            color: black;
+            display: block;
+            padding: 5px;
+            border-bottom: white solid 1px;
+            border-spacing: 0;
+            text-decoration: none;
+			
+			background-color: #cce6ff;
+        }
+		
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+	border-radius: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #cce6ff;
+  
+}
+
+
+
+.container{
+ position: relative;
+ 
+}
+		
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+<a href="#home">
+  <!--
+  <img class="img-redonda" src="img/logo.png" width="30" height="30" alt="abrilcode">
+  -->
+  </a>
+    <a href="#home" style="font-weight:bold;padding-right:70px">abrilcode</a>
+
+  <div class="dropdown" >
+    <button class="dropbtn" >DAM 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="https://programacion.abrilcode.com">Programación</a>
+        <a href="https://entornos.abrilcode.com">Entornos de Desarrollo</a>
+        <a href="https://bbdd.abrilcode.com">Bases de Datos</a>
+		<a href="https://ssii.abrilcode.com">Sistemas Informáticos</a>
+		<a href="https://adatos.abrilcode.com">Acceso a Datos</a>
+		<a href="https://psp.abrilcode.com">Programación de Servicios y Procesos</a>
+		<a href="https://interfaces.abrilcode.com">Desarrollo de Interfaces</a>
+	  
+    </div>
+  </div> 
+	
+    <div class="dropdown" ">
+    <button class="dropbtn" >DAW 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+		<a href="https://programacion.abrilcode.com">Programación</a>
+		<a href="https://entornos.abrilcode.com">Entornos de Desarrollo</a>
+        <a href="https://bbdd.abrilcode.com">Bases de Datos</a>
+		<a href="https://ssii.abrilcode.com">Sistemas Informáticos</a>
+		<a href="https://despliegue.abrilcode.com">Despliegue de Aplicaciones Web</a>
+    </div>
+  </div> 
+
+
+  <div class="dropdown" >
+    <button class="dropbtn" >ASIR 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+		<a href="https://gbbdd.abrilcode.com">Gestion de Bases de Datos</a>
+        <a href="https://abbdd.abrilcode.com">Administración de Sistemas Gestores de Bases de Datos</a>
+      
+    </div>
+  </div> 
+  
+  <div class="dropdown" >
+    <button class="dropbtn" >SMR 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://seginf.abrilcode.com">Seguridad Informática</a>
+      
+    </div>
+  </div> 
+  <a href="http://moodle.abrilcode.com">Moodle</a>
+
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+<div class="row1" >
+
+        <div class="card" style="height:100%;"	>
+
+
+  <div class="main">
+
+
+<br/><br/><br/><br/>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+  <div class="container">
+    <div class="content">
+      <img src="img/dam.png" alt="Desarrollo de Aplicaciones Multiplataforma" style="width:100%">
+      <h3>DAM</h3>
+
+    </div>
+		<div class="overlay">
+			<div class="vertical-menu">
+                <a href="https://programacion.abrilcode.com">Programación</a>
+                <a href="https://entornos.abrilcode.com">Entornos de Desarrollo</a>
+                <a href="https://bbdd.abrilcode.com">Bases de Datos</a>
+				<a href="https://ssii.abrilcode.com">Sistemas Informáticos</a>
+				<a href="https://adatos.abrilcode.com">Acceso a Datos</a>
+				<a href="https://psp.abrilcode.com">Programación de Servicios y Procesos</a>
+				<a href="https://interfaces.abrilcode.com">Desarrollo de Interfaces</a>
+			</div>
+		</div>
+	</div>
+  
+  
+  </div>
+  <div class="column">
+  <div class="container">
+    <div class="content">
+    <img src="img/daw1.png" alt="Desarrollo de Aplicaciones Web" style="width:100%">
+      <h3>DAW</h3>
+      
+    </div>
+	
+	<div class="overlay">
+		<div class="vertical-menu">
+            <a href="https://programacion.abrilcode.com">Programación</a>
+            <a href="https://entornos.abrilcode.com">Entornos de Desarrollo</a>
+            <a href="https://bbdd.abrilcode.com">Bases de Datos</a>
+			<a href="https://ssii.abrilcode.com">Sistemas Informáticos</a>
+			<a href="https://despliegue.abrilcode.com">Despliegue de Aplicaciones Web</a>
+		</div>
+	</div>
+	
+	</div>
+  </div>
+  <div class="column">
+  <div class="container">
+    <div class="content">
+    <img src="img/asir.png" alt="Administración de Sistemas Informáticos en Red" style="width:100%">
+      <h3>ASIR</h3>
+      
+    </div>
+	<div class="overlay">
+		<div class="vertical-menu">
+                <a href="https://gbbdd.abrilcode.com">Gestion de Bases de Datos</a>
+                <a href="https://abbdd.abrilcode.com">Administración de Sistemas Gestores de Bases de Datos</a>
+				</div>
+	</div>
+	
+	</div>
+  </div>
+  <div class="column">
+  <div class="container">
+    <div class="content">
+    <img src="img/smr1.png" alt="Sistemas Microinformáticos y Redes" style="width:100%">
+      <h3>SMR</h3>
+      
+    </div>
+		<div class="overlay">
+		<div class="vertical-menu">
+                <a href="https://seginf.abrilcode.com">Seguridad Informática</a>
+				</div>
+	</div>
+	
+	</div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+
+<!-- END MAIN -->
+</div>
+  
+        </div>
+
+					<div class="footer">
+    <p>2022 abrilCode -
+        <a href="mailto:info@abrilcode.com">info@abrilcode.com</a>
+    </p>
+
+		
+    </div>
+
+    
+</div>
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

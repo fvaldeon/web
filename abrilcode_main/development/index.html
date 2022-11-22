@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="abrilCode">
+    <meta name="author" content="Fernando Valcas">
+    <link rel="icon" href="img/favicon.ico">
+    <title>abrilCode</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana,SansSerif;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 2px;
+            text-align: center;
+            background: white;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+        .vertical-menu table{
+
+        }
+
+        .vertical-menu a {
+            background-color: white;
+            color: black;
+            display: block;
+            padding: 12px;
+            border: #5e5e5e solid 1px;
+            border-spacing: 0;
+            border-collapse: collapse;
+            text-decoration: none;
+        }
+
+        .vertical-menu a:hover {
+            background-color: #f0f8ff;
+        }
+
+
+        .img-redonda{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="topnav">
+    <a href="https://www.abrilcode.com" style="font-weight:bold">abrilCode</a>
+
+
+
+
+</div>
+
+<div class="row" style="height:620px;">
+    <div class="leftcolumn">
+        <div class="card" style="height:690px;">
+
+            <img class="img-redonda" src="img/logo.png" width="100" height="100" alt="abrilcode">
+        </div>
+
+					<div class="footer">
+    <p>2021 abrilCode -
+        <a href="mailto:info@abrilcode.com">info@abrilcode.com</a>
+    </p>
+</div>
+		
+    </div>
+    <div class="rightcolumn">
+        <div class="card" style="height:570px;">
+
+            <div class="vertical-menu">
+                <a href="https://programacion.abrilcode.com">Programación</a>
+                <a href="https://entornos.abrilcode.com">Entornos de Desarrollo</a>
+                <a href="https://adatos.abrilcode.com">Acceso a Datos</a>
+                <a href="https://ssii.abrilcode.com">Sistemas Informáticos</a>
+                <a href="https://interfaces.abrilcode.com">Desarrollo de Interfaces</a>
+                <a href="https://bbdd.abrilcode.com">Bases de Datos</a>
+                <a href="https://gbbdd.abrilcode.com">Gestion de Bases de Datos</a>
+                <a href="https://abbdd.abrilcode.com">Administración de Sistemas Gestores de Bases de Datos</a>
+                <a href="https://seginf.abrilcode.com">Seguridad Informatica (SMR)</a>
+            </div>
+          
+            
+        </div>
+        
+        <div class="card" style="height:200px;">
+            <div class="vertical-menu">
+                <a href="http://moodle.abrilcode.com">Moodle</a>
+            </div>
+             
+        </div>
+
+    </div>
+    
+</div>
+
+</body>
+</html>

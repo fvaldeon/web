@@ -1,8 +1,8 @@
 <?php
 session_start();
-date_default_timezone_set("Europe/Madrid");
 include("./conf/db_conf.php");
 include("./conf/funciones.php");
+date_default_timezone_set("Europe/Madrid");
 
 $con = mysqli_connect(DATABASE_HOST, DATABASE_USER, DATABASE_PASS, DATABASE_NAME);
 $message = '';
