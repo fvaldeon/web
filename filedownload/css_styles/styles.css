@@ -1,0 +1,155 @@
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(18,14,103);
+  background: linear-gradient(90deg, rgba(18,14,103,0.814139941690962) 0%, rgba(116,221,218,0.9278425655976676) 49%, rgba(45,70,190,1) 100%);
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+button {
+    width: calc(100% - 22px); /* 100% width minus padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #f8f9fa;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Ajustes adicionales para botones en celdas de la tabla */
+table td form {
+    display: inline-block;
+    width: 75%;
+}
+
+table td button {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0; /* Asegura que el botón ocupe todo el ancho de la celda */
+    padding: 5px; /* Reduce el padding para ajustar el botón */
+    border: none;
+    background: #dc3545; /* Color de fondo para el botón de eliminar */
+    color: #fff; /* Color del texto para el botón de eliminar */
+}
+
+table td button:hover {
+    background: #c82333; /* Color de fondo al pasar el mouse para el botón de eliminar */
+}
+
+
+footer {
+  margin-top: 370px;
+}
+footer a {
+  display: inline;
+  color: rgba(40, 38, 38, 0.66);
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+
+
+.link-abrilcode{
+  color: midnightblue;
+}
+
+#mensaje-error{
+    color: rgba(199, 17, 212, 0.98);
+    font-size: 16px;
+    font-weight: 250;
+}
+
+#lbl-message{
+    color: rgba(66, 7, 69, 0.62);
+    text-align: center;
+    font-weight: 320;
+}
